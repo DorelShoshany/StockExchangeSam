@@ -1,0 +1,3 @@
+# from domain.repositories.configurations_repository import ConfigurationsRepository
+from domain.repositories.ips_source_repository import IPsSourceRepository
+from domain.repositories.stocks_repository import StocksRepository
