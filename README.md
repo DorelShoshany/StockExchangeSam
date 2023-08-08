@@ -23,20 +23,23 @@ Before running the app, please make sure you have the following prerequisites:
 ## Running the App
 
 1. Clone this repository to your local machine:
+ ```bash
   git clone https://github.com/your-username/stock-exchange-app.git
   cd stock-exchange-app
 
-2. Build and run the app using Docker Compose:
+3. Build and run the app using Docker Compose:
+   ```bash
   docker-compose up --build
   Once the containers are up and running, you can access the app through your web browser or a tool like curl.
   The app will be available at http://localhost:5000.
 
 4. To stop the app and containers, use:
+   ```bash
    docker-compose down
 
 ## Endpoints
 
-1. information about stock by symbol: GET https://localhost:5000/stocks/{symbol}
+1. information about a stock by symbol: GET https://localhost:5000/stocks/{symbol}
 2. information about your total cost in $: GET http://localhost:5000/total-cost
 3. you can reset the total cost to 0: GET http://localhost:5000/total-cost/rest
 
